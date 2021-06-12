@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+body {
+  background-color: rgb(219, 219, 219);
+  flex-wrap: wrap;
+}
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-between;
+}
+
+h1 {
+  padding: .5em 1em;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  color: grey;
+}
+
+.sol{
+  display: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 40px;
+  background-color: rgb(19,19,19,19);
+  border: 0;
+  text-shadow: 2px;
+}
+
+.luna{
+  display: inline;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 40px;
+  background-color: white;
+  border: 0;
+  text-shadow: 2px;
+} 
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2em 10%;
+}
+
+.item {
+  width: 30em;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item h2 {
+  font-size: 1em;
+  margin-bottom: .2em;
+}
+
+img{
+height: 430px;
+}
+
+
+/* estilos para tema oscuro ---------------------------------------------------------------------------------------------- */
+/* los suigientes estilos son los que usaremos para aplicar el modo oscuro, ustedes deberán modificar los selectores para
+poder resolver el ejercicio */
+
+
+
+/* el color de fondo  */
+.dark
+{
+  background-color: rgb(39, 39, 39);
+}
+
+/* las modificaciones al titulo 'la familia de los felinos */
+
+.dark h1{ 
+  background-color: rgb(19, 19, 19);
+  color: rgb(170, 170, 170);
+  border-color: black;
+}
+
+.dark header{ 
+  background-color: rgb(19, 19, 19);
+  border-color: black;
+}
+
+/* las modificaciones a los items */
+.dark .item
+{
+  background-color: rgb(19, 19, 19);
+  border-color: black;
+}
+
+/* las modificaciones a los textos de los items y los titulos de ellos */
+.dark p, .dark h2
+{
+  color: rgb(230, 230, 230);
+}
+
+
+/* cambio de tema */
+
