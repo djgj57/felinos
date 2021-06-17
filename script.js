@@ -1,3 +1,7 @@
+function $(item) {
+    return document.querySelector(item);
+}
+
 let felinos = {
     Tigre: {
         imgDuermiendo: './imagenes/tigre_durmiendo.jpg',
@@ -38,10 +42,10 @@ let felinos = {
 }
 
 
-let body = document.querySelector('body');
-let sol = document.querySelector('.sol');
-let luna = document.querySelector('.luna');
-let contenedor = document.querySelector('.contenedor');
+let body = $('body');
+let sol = $('.sol');
+let luna = $('.luna');
+let contenedor = $('.contenedor');
 
 
 for (let element of Object.values(felinos)){
@@ -59,7 +63,7 @@ for (let element of Object.values(felinos)){
 let imagenes = document.querySelectorAll('img');
 
 
-document.querySelector('.sol').addEventListener('click', function () {
+$('.sol').addEventListener('click', function () {
     body.classList.toggle('dark');
     sol.style.display = 'none';
     luna.style.display = 'inline';
@@ -71,7 +75,7 @@ document.querySelector('.sol').addEventListener('click', function () {
 
 })
 
-document.querySelector('.luna').addEventListener('click', function () {
+$('.luna').addEventListener('click', function () {
     body.classList.toggle('dark');
     sol.style.display = 'inline';
     luna.style.display = 'none';  
@@ -82,3 +86,8 @@ document.querySelector('.luna').addEventListener('click', function () {
    }
     
 })
+
+
+body.addEventListener('click', function(){
+
+});
